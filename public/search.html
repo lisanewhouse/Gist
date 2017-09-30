@@ -3,9 +3,9 @@
 
 <head>
    <meta charset="UTF-8">
-    <title>Browse</title>
+    <title>Search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/gif/png" href="../assets/icon.png">
+    <link rel="icon" type="image/gif/png" href="icon.png">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -13,14 +13,14 @@
     <link href="https://fonts.googleapis.com/css?family=Amiri|Bungee+Shade|Quicksand" rel="stylesheet">
     <!-- FONT AWESOME -->
     <script src="https://use.fontawesome.com/c7a389ab5e.js"></script>
-    <link rel="stylesheet" href="../assets/css/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
 </head>
 
 <body>
 
   <nav class="fixed-top navbar navbar-expand-lg navbar-inverse bg-dark">
     <!-- Brand - kicks user to index page -->
-    <a class="navbar-brand" href="index.html"><h1 class="display-5">GIST</h1></a>
+    <a class="navbar-brand" href="gist.html"><h1 class="display-5">GIST</h1></a>
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#extend-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa fa-bars fa-lg"></i>
@@ -33,15 +33,15 @@
           <a class="nav-link" href="gist.html">Browse</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="upload.html">Search<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="search.html">Search<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Explore more
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="politics.html">Politics</a>
-            <a class="dropdown-item" href="#">Science</a>
+            <a class="dropdown-item" href="politics.html">Politicians</a>
+            <a class="dropdown-item" href="bills.html">Locate Bill</a>
             <a class="dropdown-item" href="#">Legal</a>
           </div>
         </li>
@@ -66,7 +66,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header" align="center">
-          <img class="img-circle" id="img_logo" src="../assets/img/logo.png">
+          <img class="img-circle" id="img_logo" src="assets/img/logo.png">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span class="fa fa-times" aria-hidden="true"></span>
           </button>
@@ -168,20 +168,23 @@
     		<form class="upload-form">
           <!-- Input Title -->
           <div class="form-group">
-            <label for="userTitle">Input a Title</label>
-            <input type="text" class="form-control" id="userTitle" placeholder="Give it a Title">
+            <label for="user-title">Input a Title</label>
+            <input type="text" class="form-control" id="user-title" placeholder="Give it a Title">
           </div>
     			<!-- Input Link -->
-    		  
+    		  <div class="form-group">
+    		    <label for="user-link">Insert link here</label>
+    		    <input type="text" class="form-control" id="user-link" placeholder="https://www.website.com/article/index.html">
+    		  </div>
     		  <!-- or, Input Text -->
     		  <div class="form-group">
-    		    <label for="userText">or, Paste your own text here!</label>
-    		    <textarea class="form-control" id="userText" rows="3"></textarea>
+    		    <label for="user-text">or, Paste your own text here!</label>
+    		    <textarea class="form-control" id="user-text" rows="3"></textarea>
     		  </div>
     		  <!-- Input the amount of sentences -->
     		  <div class="form-group">
-    		    <label for="sentenceNumber">How many sentences would you like returned</label>
-    		    <input id="sentenceNumber" type="text" class="form-control" for="sentenceNumber" placeholder="10">
+    		    <label for="sentence-number">How many sentences would you like returned</label>
+    		    <input id="sentence-number" type="text" class="form-control" for="sentence-number" placeholder="10">
     		  </div>
     		  <!-- Button for search -->
     		  <button id="search" class="btn btn-default" type="submit">Go!</button>
@@ -216,6 +219,11 @@
 
 <div class="navbar navbar-secondary bg-light footer">
   <h1 class="brand">G</h1>
+  <p class="footer-link">   </p>
+  <a href="about.html" class="footer-link">About</a>
+  <p class="footer-link">|</p>
+  <a href="contact.html" class="footer-link">Contact</a>
+  <p class="footer-link">   </p>
 </div>
                         
    
