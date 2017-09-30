@@ -11,6 +11,10 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname, "../public/gist.html"));
 	});
 
+  app.get("/gist", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/gist.html"));
+  });
+
  app.get("/locate-bill", function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/bills.html"));
 	});
@@ -23,11 +27,11 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/politics.html"));
   });
 
-  app.get("/politicians", function(req, res) {
+  app.get("/about", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/about.html"));
   });
 
-  app.get("/politicians", function(req, res) {
+  app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/contact.html"));
   });
 
