@@ -100,7 +100,7 @@ function isSummarized(param1,param2,param3, cb){
 
 var textSummarized;
 var textToSummarize;
-router.post("/api/new", function(req, res) {
+app.post("/api/new", function(req, res) {
   var textToSummarize = req.body;
 
   

@@ -39,8 +39,6 @@ var url = "https://theunitedstates.io/congress-legislators/";
                 // for (var a = 0; a < res[i].length; a++) {
                 //   $("#firstName").append(firstName);
                   // $("#answers").append("<button class='btn btn-block' id='"lastName"'>Did you mean "firstName " " , lastName"</button></p>");
-                }
-
             } else {
             
               $("#firstName").append(firstName);

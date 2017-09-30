@@ -110,4 +110,21 @@ $(document).ready(function() {
 		}, 
 		msgShowTime);
 	}
+
+	// $.post("register.php", {
+ //    name1: register_username,
+ //    email1: register_email,
+ //    password1: register_password
+	// }, function(data) {
+ //    if (data == 'You have Successfully Registered.....') {
+ //        $("register-form")[0].reset();
+ //    }
+ //    alert(data);
+// });
+
+	
 });
+
+
+
+
