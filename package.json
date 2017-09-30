@@ -1,5 +1,5 @@
 {
-  "name": "Gist",
+  "name": "gist",
   "version": "1.0.0",
   "description": "Summarizes hard-to-read political bills, legal documents, and scientific studies.",
   "main": "server.js",
